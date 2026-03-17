@@ -1,0 +1,36 @@
+# requirements.txt
+# ============================================================
+# Django Project Dependencies
+#
+# FLASK → DJANGO CONVERSION CHANGES:
+#
+#   REMOVED (Flask-specific):
+#     Flask==3.0.0
+#     Flask-CORS==4.0.0
+#     Flask-Bcrypt==1.0.1
+#
+#   ADDED (Django equivalents):
+#     Django==4.2.9          ← replaces Flask
+#     django-cors-headers==4.3.1  ← replaces Flask-CORS
+#     bcrypt==4.1.2          ← replaces Flask-Bcrypt (same algorithm)
+#     mysqlclient==2.2.4     ← replaces mysql-connector-python
+#
+#   UNCHANGED:
+#     PyJWT==2.8.0           ← same JWT library, same token format
+# ============================================================
+
+# Core framework (replaces Flask)
+Django==4.2.9
+
+# CORS support (replaces Flask-CORS)
+django-cors-headers==4.3.1
+
+# Password hashing (replaces Flask-Bcrypt — same bcrypt algorithm)
+bcrypt==4.1.2
+
+# JWT tokens (unchanged from Flask project)
+PyJWT==2.8.0
+
+# MySQL database driver (replaces mysql-connector-python)
+# mysqlclient is the recommended Django MySQL driver
+mysqlclient==2.2.4
