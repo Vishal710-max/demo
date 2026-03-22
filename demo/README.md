@@ -10,9 +10,7 @@
 
 ---
 
-## Flask → Django 
 
-| What changed | Flask | Django |
 |---|---|---|
 | Framework | `Flask` | `Django 4.2` |
 | CORS | `Flask-CORS` | `django-cors-headers` |
