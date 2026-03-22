@@ -10,7 +10,7 @@
 
 ---
 
-## Flask → Django Conversion 
+## Flask → Django 
 
 | What changed | Flask | Django |
 |---|---|---|
